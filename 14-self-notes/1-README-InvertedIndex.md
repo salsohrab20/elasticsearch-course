@@ -2,6 +2,7 @@
 
 ```
 Elastic search uses Apache lucene behind the scenes
+ - Apache Lucene provides the underlying search and indexing engine
  - Apache lucene is a Java library which handles 
     i) actual storage
     ii) indexing documents
@@ -68,7 +69,7 @@ Indexing Simplifed - for each and every field we would have an inverted index ta
 ![img.png](img.png)
 
 ```
-Q) Why is this table called Inverted index? 
+Q) Why is this table called Inverted index or lookup table? 
  - It's because we invert the index. In traditional database, consider the one 
     attached below we treat the ID as the index and search operations are 
     performed on the basis of that for faster results. However in case of Elasticsearch the search
