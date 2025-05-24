@@ -1,3 +1,12 @@
+## NOTES
+
+```
+Q/A :
+ 1) What about Schema definition?
+    - It is called "Mapping" . It's optional and flexible
+    - Explicit mapping can be done and it is recommended
+```
+
 ## CRUD
 
 - Create Index
@@ -98,6 +107,7 @@ GET /books/_search?q=4.6
 
 - To update a doc with ID.
   - POST will also work. PUT/POST will have the `upsert` behavior.
+  - `upsert` - Updates if data present , or else inserts new data
 ```
 PUT /books/_doc/3
 {
