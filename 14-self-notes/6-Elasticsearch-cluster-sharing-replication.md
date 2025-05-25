@@ -72,6 +72,9 @@ it will do the indexing process when documents are stored.
 ![img_30.png](img_30.png)
 ![img_29.png](img_29.png)
 
+> **NOTE**: The following wouldn't be a case always. Multiple primary shards could be placed on the same instance if there's only one node.
+> ![img_28.png](img_28.png)
+
 
 
 

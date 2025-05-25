@@ -3,7 +3,7 @@
 
 ```
 # create an index
-PUT /products
+PUT /products     -- Creates index with one primary shard and one replica shard
 
 # status could be yellow
 GET /_cluster/health
