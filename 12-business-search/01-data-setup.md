@@ -5,7 +5,7 @@
 ```yaml
 services:
   elastic:
-    image: docker.elastic.co/elasticsearch/elasticsearch:8.17.0
+    image: docker.elastic.co/elasticsearch/elasticsearch:9.0.2
     ports:
     - 9200:9200
     environment:
@@ -13,7 +13,7 @@ services:
     - xpack.security.enabled=false
     - xpack.security.http.ssl.enabled=false
   kibana:
-    image: docker.elastic.co/kibana/kibana:8.17.0
+    image: docker.elastic.co/kibana/kibana:9.0.2
     ports:
     - 5601:5601
     environment:

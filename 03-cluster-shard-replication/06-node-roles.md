@@ -5,7 +5,7 @@
 ```yaml
 services:
   es01:
-    image: docker.elastic.co/elasticsearch/elasticsearch:8.17.0
+    image: docker.elastic.co/elasticsearch/elasticsearch:9.0.2
     environment:
     - node.name=es01
     - cluster.name=my-cluster  
@@ -15,7 +15,7 @@ services:
     - "ES_JAVA_OPTS=-Xms512m -Xmx512m"      
     - node.roles=master    
   es02:
-    image: docker.elastic.co/elasticsearch/elasticsearch:8.17.0
+    image: docker.elastic.co/elasticsearch/elasticsearch:9.0.2
     environment:
     - node.name=es02
     - cluster.name=my-cluster 
@@ -28,7 +28,7 @@ services:
     ports:
     - 9202:9200 
   es03:
-    image: docker.elastic.co/elasticsearch/elasticsearch:8.17.0
+    image: docker.elastic.co/elasticsearch/elasticsearch:9.0.2
     environment:
     - node.name=es03
     - cluster.name=my-cluster 
@@ -41,7 +41,7 @@ services:
     ports:
     - 9203:9200  
   kibana:
-    image: docker.elastic.co/kibana/kibana:8.17.0
+    image: docker.elastic.co/kibana/kibana:9.0.2
     ports:
     - 5601:5601
     environment:
